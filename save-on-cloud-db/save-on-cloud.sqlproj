@@ -66,5 +66,7 @@
     <Build Include="UserLogins.sql" />
     <Build Include="UserRoles.sql" />
     <Build Include="UserTokens.sql" />
+    <Build Include="AzureAccounts.sql" />
+    <Build Include="UserAzureAccounts.sql" />
   </ItemGroup>
 </Project>
