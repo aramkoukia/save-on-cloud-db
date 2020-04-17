@@ -15,5 +15,7 @@
 	[SecurityStamp] [nvarchar](max) NULL,
 	[TwoFactorEnabled] [bit] NOT NULL,
 	[UserName] [nvarchar](256) NULL,
-    CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED ( [Id] ASC )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+	[OrganizationId] INT NOT NULL,
+    PRIMARY KEY ([Id]),
+	CONSTRAINT [FK_Organizations_OrganizationId] FOREIGN KEY([OrganizationId]) REFERENCES [dbo].[Organizations] ([Id]) ON DELETE CASCADE
 )
