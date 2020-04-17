@@ -69,5 +69,6 @@
     <Build Include="AzureAccounts.sql" />
     <Build Include="UserAzureAccounts.sql" />
     <Build Include="Settings.sql" />
+    <Build Include="Organizations.sql" />
   </ItemGroup>
 </Project>
